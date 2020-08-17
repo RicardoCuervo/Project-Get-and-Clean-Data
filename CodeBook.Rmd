@@ -1,0 +1,37 @@
+---
+title: "CodeBook"
+author: "Ricardo Cuervo"
+date: "16/8/2020"
+output: html_document
+---
+
+Here explain of the objects used for data cleansing.
+
+# object for read files in DataFrame
+
+trainData : is the Train Data
+trainLabels : is the Train Labels
+testData : is the Test Data
+testLabels : is the Test Labels
+features : is the features name
+activiltyLabels : is the activity text labels
+trainSubject : is the subjects number for train obsevations  
+testSubject : is the subjects number for test obsevations 
+
+# merged dataframe
+
+CompleteData : merge train and test data
+totallabels : merge train and test labels
+totalSubjects : merge train and test subject
+
+# tidy data
+meanspos : position vector where the mean word is found
+stdpos : position vector where the std word is found
+MeanStdData : Data Frame with means and std data
+finalset : merged MeanStdData with totallabels and totalsSubjects
+meansVal : the names of the mean variables are obtained
+stdVal : the names of the std variables are obtained
+newLabels : meanVal plus stdVal
+
+#summarize data
+prom : final result grouped by activity and subject with average value of all features
