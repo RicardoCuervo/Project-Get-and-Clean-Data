@@ -1,0 +1,33 @@
+---
+title: "Readme"
+author: "Ricardo Cuervo"
+date: "16/8/2020"
+output: html_document
+---
+
+My native language is Spanish, I apologize for the lack of grammar
+
+The original data contains the following information.
+- Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
+- Triaxial Angular velocity from the gyroscope.
+- A 561-feature vector with time and frequency domain variables.
+- Its activity label.
+- An identifier of the subject who carried out the experiment.
+
+The data is processed in the run_analysis.R script
+
+The run_analysis.R script contains the code for:
+
+1. Merges the training and the test sets to create one data set.
+2. Extracts only the measurements on the mean and standard deviation for each measurement.
+3. Uses descriptive activity names to name the activities in the data set
+4. Appropriately labels the data set with descriptive variable names.
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+The dplyr package is used to order and clean the data in a comfortable way
+Finally a txt file is obtained with the ordered data
+
+includes the following files:
+- Readme.md
+- CodeBook.md
+- run_analysis.R
